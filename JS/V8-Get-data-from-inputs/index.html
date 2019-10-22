@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500">
+  <link rel="stylesheet" href="styles.css">
+  <title>TosoLIst-v8 Get data from input</title>
+</head>
+<body>
+
+<p><button id="btnDisplay" onclick="todos.displayTodos()">Display Todos</button></p>
+<p></p><button id="btnToggleAll" onclick="todos.toggleAll()">Toggle all</button></p>
+
+<p class="row">
+  <input id="inputAdd" type="text" placeholder="Todo Text">
+  <button id="btnAdd" onclick="handlers.addTodo()">ADD Todo</button>
+</p>
+
+<p class="row">
+  <input id="inputChange" class="index" type="number" min="0" placeholder="Index">
+  <input id="inputChange" type="text" placeholder="Todo Text">
+  <button id="btnChange">CHANGE Todo</button>
+</p>
+
+<p class="row">
+  <input id="inputToggle" class="index" type="number" min="0" placeholder="Index">
+  <button id="btnToggle" onclick="handlers.toggleTodo()">Toggle Todo</button>
+</p>
+
+<p class="row">
+    <input id="inputDelete" class="index" type="number" min="0" placeholder="Index">
+    <button id="btnDelete" onclick="handlers.deleteTodo()">Delete Todo</button>
+  </p>
+
+<script src="app.js"></script>
+</body>
+</html>
